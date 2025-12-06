@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://R-nees.github.io/todo-app/sitemap.xml
