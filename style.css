@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+  /* 🌄 Background image settings */
+  background-image: url("to-do\ list\ writing.jpg");
+  background-size: cover;       /* Makes the image fill the screen */
+  background-repeat: no-repeat; /* Prevents tiling */
+  background-position: center;  /* Centers the image */
+  background-attachment: fixed; /* Optional: cool parallax effect */
+}
+
+.app-container {
+  width: 420px;
+  background: rgba(255, 255, 255, 0.7); /* translucent */
+  backdrop-filter: blur(6px);           /* frosted glass effect */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 25px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  background: #4a73ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #365be0;
+}
+
+.task-counter {
+  margin: 15px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+li {
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 5px solid transparent;
+  transition: 0.2s;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #777;
+  border-left: 5px solid #28c76f;
+}
+
+li button {
+  background: #ff4f4f;
+  padding: 7px 12px;
+  border-radius: 4px;
+}
+
+li button:hover {
+  background: #cc3d3d;
+}
+
+li span {
+  cursor: pointer;
+}
